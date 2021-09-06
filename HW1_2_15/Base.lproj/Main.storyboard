@@ -16,29 +16,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="hmw-15-YIU">
-                                <rect key="frame" x="16" y="104" width="358" height="680"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dba-yD-RbY">
-                                        <rect key="frame" x="-1" y="0.0" width="358" height="332"/>
-                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                        <variation key="heightClass=regular-widthClass=regular" preservesSuperviewLayoutMargins="NO"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogW-DH-kGE">
-                                        <rect key="frame" x="0.0" y="348" width="358" height="332"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                    </view>
-                                </subviews>
-                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
-                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogW-DH-kGE" userLabel="ViewGreen">
+                                <rect key="frame" x="1" y="719" width="358" height="349"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dba-yD-RbY" userLabel="ViewOrange">
+                                <rect key="frame" x="1" y="5278" width="358" height="348"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="hmw-15-YIU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="N0c-Aa-NT3"/>
-                            <constraint firstItem="hmw-15-YIU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Q8z-8H-tiM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hmw-15-YIU" secondAttribute="trailing" constant="16" id="fLU-4L-yoz"/>
-                            <constraint firstAttribute="bottom" secondItem="hmw-15-YIU" secondAttribute="bottom" constant="60" id="v0Z-72-HdQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dba-yD-RbY" secondAttribute="trailing" constant="16" id="0RF-mE-2pm"/>
+                            <constraint firstItem="ogW-DH-kGE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5vc-np-zE7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ogW-DH-kGE" secondAttribute="trailing" constant="16" id="ANc-C2-2Vs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dba-yD-RbY" secondAttribute="bottom" constant="18" id="QYx-H3-V5V"/>
+                            <constraint firstItem="dba-yD-RbY" firstAttribute="top" secondItem="ogW-DH-kGE" secondAttribute="bottom" constant="35" id="W5U-FM-F4a"/>
+                            <constraint firstItem="ogW-DH-kGE" firstAttribute="height" secondItem="dba-yD-RbY" secondAttribute="height" id="Xrs-mE-5GM"/>
+                            <constraint firstItem="dba-yD-RbY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="h5M-y0-Y7w"/>
+                            <constraint firstItem="ogW-DH-kGE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="wjN-Dl-QJ4"/>
                         </constraints>
                     </view>
                 </viewController>
